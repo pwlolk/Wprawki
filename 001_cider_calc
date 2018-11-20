@@ -1,16 +1,16 @@
 #Podstawowy kalkulator cydrowniczy
 print("Ile pirosiarczynu, ile drożdży i ile pożywki".upper())
 while True:
-    raw_juice = int(input("Podaj ilość soku [L]: "))
+    raw_juice = int(input("Podaj wielkość nastawu [L]: "))
     pH = int(input("Wartość pH: ")
-    sulphur_10L = 
+    sulphur_ppm = 
     yeast_10L = int(input("Podaj ilośc drożdży [g/10L]: "))
     feed_10L = int(input("Podaj ilośc pożywki [g/10L]: "))
     sulphur_dose = 
     yeast_dose = (raw_juice*yeast_10L)/10
     feed_dose = (raw_juice*feed_10L)/10
-    print("Dla " + str(raw_juice) + "L soku zadaj:")
-    print("Pirosiarczyn - " + str(sulphur_dose) +"g")
-    print("Drożdże - " + str(yeast_dose) +"g")
-    print("Pożywka - " + str(feed_dose) +"g")
+    print("Dla " + str(raw_juice) + "L nastawu zadaj:")
+    print("- pirosiarczynu - " + str(sulphur_dose) +"g")
+    print("- drożdży - " + str(yeast_dose) +"g")
+    print("- pożywki - " + str(feed_dose) +"g")
     print("")
