@@ -21,7 +21,7 @@ while True:
         i_tpH_1 = float(tpH[t_index])
         i_tpiro_0 = float(tpiro[t_index - 1])
         i_tpiro_1 = float(tpiro[t_index])
-        print('\n[Kontrolnie] Przedział pH:\t\t' + str(i_tpH_0) + '-' + str(i_tpH_1))
+        print('\n[Kontrolnie] Przedział pH:\t' + str(i_tpH_0) + '-' + str(i_tpH_1))
         print('[Kontrolnie] Przedział piro:\t' + str(i_tpiro_0) + '-' + str(i_tpiro_1))
         sulphur_10L = i_tpiro_0 + ((i_tpiro_1 - i_tpiro_0)/(i_tpH_1 - i_tpH_0))*(pH - i_tpH_0)
 
@@ -32,7 +32,7 @@ while True:
     feed_dose = (raw_juice*feed_10L)/10
     feed_dose = round(feed_dose, 1)
     print('\n' + "Dla " + str(raw_juice) + "L nastawu zadaj:")
-    print("- pirosiarczynu: " + str(sulphur_dose) + "g")
-    print("- drożdży:\t\t " + str(yeast_dose) + "g")
-    print("- pożywki:\t\t " + str(feed_dose) + "g")
+    print("- pirosiarczynu:\t" + str(sulphur_dose) + "g")
+    print("- drożdży:\t\t" + str(yeast_dose) + "g")
+    print("- pożywki:\t\t" + str(feed_dose) + "g")
     print("")
